@@ -7,9 +7,11 @@
  Functions used to look up text:
 
 #+BEGIN_SRC elisp
-  (defun my-look-up-dict (word)
-    (start-process "goldendict" nil "goldendict" word)
-    )
+(defun my-look-up-dict (word)
+  (let ((goldendict-executable (executable-find "goldendict")))
+    (if goldendict-executable
+        (start-process "goldendict" nil goldendict-executable word)
+      (message "GoldenDict executable not found. Please make sure it is installed and in your PATH."))))
 
 (defun my/look-up-dict ()
   (interactive)
