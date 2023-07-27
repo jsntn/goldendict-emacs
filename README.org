@@ -1,7 +1,7 @@
-#+TITLE: Look up text at point by GoldenDict in Emacs
+#+TITLE: Look up text at-point/marked by GoldenDict in Emacs
 
 * Features
-- Look up text at point by [[http://goldendict.org/][GoldenDict]]
+- Look up text at-point/marked by [[http://goldendict.org/][GoldenDict]]
 
 * Code
  Functions used to look up text:
@@ -29,9 +29,9 @@
 1. Copy and paste the previous code to =~/.emacs.d/init.el=
 2. add a key binding, for example:
    #+BEGIN_SRC elisp
-     (global-set-key (kbd "C-c d") 'my/look-up-dict)
+     (global-set-key (kbd "C-c g") 'my/look-up-dict)
    #+END_SRC
 
 * Usage
 1. In Emacs, mark words by mouse or =<C-Space>=
-2. Press =<C-c d>= to invoke GoldenDict
+2. Press =<C-c g>= to invoke GoldenDict
