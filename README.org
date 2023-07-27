@@ -1,4 +1,4 @@
-#+TITLE: Lookup text at point by GoldenDict in Emacs
+#+TITLE: Look up text at point by GoldenDict in Emacs
 
 * Features
 - Look up text at point by [[http://goldendict.org/][GoldenDict]]
